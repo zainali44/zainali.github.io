@@ -8,31 +8,39 @@
 
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="hero-header">
         <div class="wrapper">
             <header>
-                <div class="logo">
-                    <img src="logo.png" alt="">
-
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="logo.png" alt="">
+                    </div>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
                 <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul>
+                    <ul class="menu" id="menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="resume.html">Resume</a></li>
-                        <li><a href="https://github.com/zainali44">Projects</a></li>
+                        <li><a href="project.html">Projects</a></li>
                         <li><a href="https://www.linkedin.com/in/zaindev/">Contact</a></li>
                 </nav>
             </header>
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("menu");
+                    menu.classList.toggle("show");
+                }
+            </script>
             <div class="container">
                 <div class="hero-pic">
                     <img src="photo.png" alt="Photo">
@@ -56,6 +64,67 @@
                 </div>
             </div>
         </div>
+
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <div class="scroll-icon">
+                    <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-js" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-bootstrap" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-sass" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-react" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-node-js" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-php" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-wordpress" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-database" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-laravel" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-python" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-java" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-android" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-angular" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-aws" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-docker" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-c" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-shopify" style="color: #ffffff;"></i>
+            </div>
+          </div>
+
+          
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+  </div>
+          
 
         <footer>
             <p><a href="#">Zain Ali</a> | All rights reserved!</p>
