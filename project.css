@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(109.6deg, rgb(28, 34, 44) 11.2%, rgb(16, 37, 60) 51.2%, rgb(24, 24, 24) 98.6%);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-box {
+    width: calc(25% - 20px); /* 25% width with 20px spacing between boxes */
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    background-color: #ffffff14;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 50px; /* Initially hide the project box */
+    border-radius: 8px;
+    border: 1px solid #ffffff14;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+    animation-delay: calc(0.1s * var(--box-index));
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Delay the animation based on the box index */
+}
+
+.project-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-box p{
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #95a2ff;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Scale effect on hover */
+.project-box:hover {
+    transform: scale(1.05) rotate(5deg); /* Slightly rotate the box on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Add a shadow on hover */
+}
+
+/* Adjust the project box size for larger screens */
+@media screen and (max-width: 1200px) {
+    .project-box {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Adjust the project box size for smaller screens */
+@media screen and (max-width: 768px) {
+    .project-box {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Adjust the project box size for even smaller screens */
+@media screen and (max-width: 480px) {
+    .project-box {
+        width: 100%;
+    }
+}
